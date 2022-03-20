@@ -1,0 +1,18 @@
+.button-home {
+  display: block;
+  margin: 0 auto;
+  width: 13rem;
+  height: 3rem;
+  border-radius: .5rem;
+  border: 2px solid var(--secondary-color);
+  box-shadow: 0 0px 3px var(--secondary-color);
+  font-family: var(--main-font);
+  font-weight: var(--bold);
+  background-color: #fff;
+  padding-top: .3rem;
+  transition: .3s;
+}
+.button-home:hover {
+  background-color: var(--secondary-color);
+  border: 2px solid var(--white);
+}

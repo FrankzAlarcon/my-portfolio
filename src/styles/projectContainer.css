@@ -1,0 +1,11 @@
+.project-card-container {
+  display: flex;
+  gap: 2rem;
+  overflow-x: scroll;
+  height: 22rem;
+}
+.project-card-container .technologies-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
