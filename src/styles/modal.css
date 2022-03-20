@@ -6,3 +6,23 @@
   top: 0;
   background-color: var(--secondary-color);
 }
+.modal-container .header .header-left .header-name {
+  color: var(--white);
+}
+.modal-container .button-home{
+  margin: 10rem auto;
+}
+.modal-buttons-container {
+  height: auto;
+  border-bottom: 1px solid var(--white);
+  margin: 0 1rem;
+}
+.modal-container .modal-buttons-container .button-home {
+  margin: 2rem auto;
+}
+.modal-container .links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 1.5rem 0;
+}

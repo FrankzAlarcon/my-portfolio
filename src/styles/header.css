@@ -17,3 +17,20 @@
   text-transform: uppercase;
   padding-left: .5rem;
 }
+.fixed {
+  position: fixed;
+  background-color: var(--white);
+  top: 0;
+  width: 100%;
+  margin: 0;
+  padding-top: 1rem;
+  animation: showHeader .2s;
+}
+@keyframes showHeader {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}

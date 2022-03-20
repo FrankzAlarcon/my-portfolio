@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import { SiGithub } from 'react-icons/si';
 import Header from '../containers/Header';
 import Footer from '../containers/Footer';
@@ -12,18 +12,21 @@ import Technologies from '../containers/Technologies';
 import Modal from '../containers/Modal';
 import { context } from '../context/Context';
 import '../styles/home.css';
+import useOnScroll from '../hooks/useOnScroll';
 
 function Home() {
   const { showModal } = useContext(context);
+  const { showFixed } = useOnScroll();
+
   return (
     <div className="App">
       {showModal && <Modal />}
-      <Header />
+      <Header showFixed={showFixed} />
       <section className="presentation">
         <Presentation image={Me} text="Hi, my name is " boldText="Frankz">
           <p>I am a student and web developer from Orellana, Ecuador 🇪🇨</p>
         </Presentation>
-        <Button text="Go to projects" />
+        <Button text="Go to projects" href="#my-projects" />
         <AboutMe>
           <p>
             Currently studying software engineering at EPN Ecuador and web development at Platzi 💚.

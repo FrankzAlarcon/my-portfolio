@@ -5,7 +5,7 @@ function Presentation({
   image, text, boldText, children,
 }) {
   return (
-    <div className="presentation-container">
+    <div id="presentation" className="presentation-container">
       <div className="presentation-main">
         <p className="presentation-text">
           {text}

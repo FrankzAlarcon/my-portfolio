@@ -5,10 +5,10 @@ import { CgDetailsMore } from 'react-icons/cg';
 import { context } from '../context/Context';
 import '../styles/header.css';
 
-function Header() {
+function Header({ showFixed }) {
   const { showModal, openModal, closeModal } = useContext(context);
   return (
-    <div id="header-part" className="header">
+    <div id="header-part" className={`header ${showFixed ? 'fixed' : ''}`}>
       <div className="header-left">
         <AiFillBulb size={30} color={showModal ? '#fff' : '#faff11'} />
         <span className="header-name">Frankz Alarcon</span>

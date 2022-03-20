@@ -1,0 +1,50 @@
+{
+  "projects": [
+    {
+      "id": "todo-app",
+      "image": "",
+      "overview": "In this little app you could administrate your TODOs, create TODOs, edit them and delete them. This App was created using React JS, vanilla CSS and implementing webpack manually",
+      "features": [
+        "Created using React",
+        "React projects configured using webpack and babel manually",
+        "Using npm to install dependencies"
+      ]
+    },
+    {
+      "id": "disney-plus-clone",
+      "image": "",
+      "overview":"It's a single page application that was created using React, React-Redux, Redux Thunk to make asynchronous requests to The Movie Database API.",
+      "features": [
+        "React project template using ViteJS",
+        "Created using React, React router dom y Redux.",
+        "Asynchronous requests with Redux Thunk",
+        "A little bit of react-bootstrap",
+        "Eslint is used as a linter",
+        "Using npm to install dependencies"
+      ]
+    },
+    {
+      "id": "twitter-graphs",
+      "image": "",
+      "overview" : "Its a web page was created using HTML, CSS and vanilla JS for the frontend and node js for the little backend. This web app fetch data from twitter API to create a graph. Also, you can select nodes to calculate the shortest route using dijkstra algorithm.",
+      "features": [
+        "Webpack was used to minified the frontend",
+        "CytoscapeJS to draw the nodes and edges",
+        "Express was used to create a little server",
+        "The backend perfom the fetch to twitter API",
+        "A little documentation was created using JSdocs",
+        "Deploy was perform in Heroku",
+        "Using npm to install dependencies"
+      ]
+    },
+    {
+      "id": "rick-and-morty",
+      "image": "",
+      "overview": "This landing page shows data of Rick and Morty API, it was created using HTML, CSS and JS",
+      "features": [
+        "Asynchronous calls to Rick and Morty API",
+        "DOM manipulation"
+      ]
+    }
+  ]
+}

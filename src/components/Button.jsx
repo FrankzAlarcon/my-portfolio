@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { context } from '../context/Context';
 import '../styles/button.css';
 
-function Button({ text }) {
+function Button({ text, href }) {
+  const { closeModal } = useContext(context);
   return (
-    <a href="#my-projects" type="button" className="button-home">{text}</a>
+    <a href={href} type="button" className="button-home" onClick={closeModal}>{text}</a>
   );
 }
 

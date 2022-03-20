@@ -1,17 +1,22 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/projectCard.css';
 
-function ProjectCard({ image, text, children }) {
+function ProjectCard({
+  image, text, id, children,
+}) {
   return (
-    <div className="project-card">
-      <img src={image} alt={text} />
-      <div className="card-caption">
-        <p className="card-text">{text}</p>
-        {
+    <Link to={`/project/${id}`}>
+      <div className="project-card">
+        <img src={image} alt={text} />
+        <div className="card-caption">
+          <p className="card-text">{text}</p>
+          {
           children
         }
+        </div>
       </div>
-    </div>
+    </Link>
   );
 }
 
