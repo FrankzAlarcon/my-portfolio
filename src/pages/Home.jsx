@@ -1,8 +1,5 @@
-import React from 'react';
-import {
-  SiReact, SiJavascript, SiPlatzi, SiGitbook,
-} from 'react-icons/si';
-import { GiSoccerBall } from 'react-icons/gi';
+import React, { useContext } from 'react';
+import { SiGithub } from 'react-icons/si';
 import Header from '../containers/Header';
 import Footer from '../containers/Footer';
 import Button from '../components/Button';
@@ -11,11 +8,16 @@ import Me from '../images/me.jpg';
 import AboutMe from '../containers/AboutMe';
 import MyWork from '../containers/MyWork';
 import ProjectsContainer from '../containers/ProjectsContainer';
+import Technologies from '../containers/Technologies';
+import Modal from '../containers/Modal';
+import { context } from '../context/Context';
 import '../styles/home.css';
 
 function Home() {
+  const { showModal } = useContext(context);
   return (
     <div className="App">
+      {showModal && <Modal />}
       <Header />
       <section className="presentation">
         <Presentation image={Me} text="Hi, my name is " boldText="Frankz">
@@ -28,18 +30,18 @@ function Home() {
             I am a fan of React ⚛ and enjoy developing web apps and SPAs with it.
             In my free time, I like to watch soccer and keep up with JS technology.
           </p>
-          <div className="technologies">
-            <SiReact size={30} color="#35a9ff" />
-            <SiJavascript size={30} color="#ffff00" />
-            <GiSoccerBall size={30} color="#fff" />
-            <SiPlatzi size={30} color="#6aff22" />
-            <SiGitbook size={30} color="#aa5f00" />
-          </div>
+          <Technologies />
         </AboutMe>
         <MyWork>
           <p>These are some of my personal projects.</p>
           <ProjectsContainer />
         </MyWork>
+        <div className="more-info">
+          <h2 className="more-info-text">More in</h2>
+          <div className="more-info-icons">
+            <a href="https://github.com/FrankzAlarcon" aria-label="github" target="_blank" rel="noreferrer"><SiGithub size={25} /></a>
+          </div>
+        </div>
       </section>
       <Footer />
     </div>

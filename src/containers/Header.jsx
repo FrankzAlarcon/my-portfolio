@@ -1,17 +1,20 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { AiFillBulb } from 'react-icons/ai';
+import { IoClose } from 'react-icons/io5';
 import { CgDetailsMore } from 'react-icons/cg';
+import { context } from '../context/Context';
 import '../styles/header.css';
 
 function Header() {
+  const { showModal, openModal, closeModal } = useContext(context);
   return (
     <div id="header-part" className="header">
       <div className="header-left">
-        <AiFillBulb size={30} color="#faff11" />
+        <AiFillBulb size={30} color={showModal ? '#fff' : '#faff11'} />
         <span className="header-name">Frankz Alarcon</span>
       </div>
       <nav className="header-rigth">
-        <CgDetailsMore size={30} color="#ee6c4d" />
+        {showModal ? <IoClose size={30} color="#fff" onClick={closeModal} /> : <CgDetailsMore size={30} color="#ee6c4d" onClick={openModal} />}
       </nav>
     </div>
   );
