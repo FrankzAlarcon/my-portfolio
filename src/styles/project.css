@@ -1,0 +1,41 @@
+.project-container {
+  max-width: 100rem;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+}
+.project-container .project-name {
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 2;
+}
+.project-container .project-image {
+  margin: 1rem auto 2rem auto;
+  display: block;
+}
+.project-container .project-overview {
+  text-align: justify;
+  line-height: 1.5;
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+}
+.project-container .project-features-text {
+  font-weight: bold;
+  line-height: 2;
+  padding-left:1rem ;
+}
+.project-container .project-features {
+  padding: 0 1rem 0 3rem;
+  margin-bottom: 5rem;
+}
+.project-container .project-features li {
+  margin: .5rem 0;
+}
+@media(min-width: 768px){
+  .project-container .project-name {
+    font-size: 3.5rem;
+  }
+  .project-container .project-image {
+    width: 45rem;
+    height: 30rem;
+  }
+}

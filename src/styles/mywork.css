@@ -7,3 +7,26 @@
 .my-work-text {
   line-height: 2;
 }
+@media(min-width: 768px){
+  .my-work-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;    
+    justify-items: center;
+    align-items: center;
+    margin: 4rem auto;
+    max-width: 100rem;
+  } 
+  .my-work-text {
+    font-size: 4rem;
+    grid-column: 2 / 3;
+    margin-bottom: 3rem;
+  }
+  .my-work-container  .my-work-description {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    text-align: right;
+  }
+  .project-card-container {
+    grid-column: 1 / 3;
+  }
+}

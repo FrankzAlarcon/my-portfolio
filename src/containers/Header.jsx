@@ -4,6 +4,7 @@ import { IoClose } from 'react-icons/io5';
 import { CgDetailsMore } from 'react-icons/cg';
 import { context } from '../context/Context';
 import '../styles/header.css';
+import Button from '../components/Button';
 
 function Header({ showFixed }) {
   const { showModal, openModal, closeModal } = useContext(context);
@@ -15,6 +16,10 @@ function Header({ showFixed }) {
       </div>
       <nav className="header-rigth">
         {showModal ? <IoClose size={30} color="#fff" onClick={closeModal} /> : <CgDetailsMore size={30} color="#ee6c4d" onClick={openModal} />}
+      </nav>
+      <nav className="header-rigth-tablet">
+        <Button text="About me" href="#about-me" />
+        <Button text="My work" href="#my-projects" />
       </nav>
     </div>
   );

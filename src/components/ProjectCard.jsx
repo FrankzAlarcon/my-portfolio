@@ -6,14 +6,14 @@ function ProjectCard({
   image, text, id, children,
 }) {
   return (
-    <Link to={`/project/${id}`}>
+    <Link to={`/project/${id}`} title="click to visit">
       <div className="project-card">
         <img src={image} alt={text} />
         <div className="card-caption">
           <p className="card-text">{text}</p>
           {
-          children
-        }
+            children
+          }
         </div>
       </div>
     </Link>

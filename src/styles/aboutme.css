@@ -5,3 +5,16 @@
   font-family: var(--third-font);
   line-height: 2;
 }
+@media(min-width: 768px){
+  .about-me-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-items: center;
+    max-width: 100rem;
+    margin: 8rem auto 6rem auto;
+  }
+  .about-me-text {
+    line-height: 2.5;
+    font-size: 4rem;
+  }
+}

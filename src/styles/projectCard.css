@@ -17,3 +17,35 @@
   font-weight: var(--bold);
   text-align: center;
 }
+@media(min-width: 768px){
+  .project-card {
+    width: 20rem;
+    height: 30rem;
+    transition: .3s;
+  }
+  .project-card img {
+    max-height: 21rem;
+  }
+  .project-card .card-text {
+    line-height: 2;
+  }
+  .project-card:hover {
+    transform: scale(1.1);
+  }
+}
+@media(min-width: 1024px){
+  .project-card {
+    width: 28rem;
+    height: 36rem;
+  }
+  .project-card img {
+    max-height: 25rem;
+  }
+  .project-card .card-text {
+    font-size: 2.5rem;
+    line-height: 2;
+  }
+  .project-card:hover {
+    transform: scale(1.05);
+  }
+}

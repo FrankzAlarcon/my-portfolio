@@ -16,3 +16,11 @@
   background-color: var(--secondary-color);
   border: 2px solid var(--white);
 }
+@media(min-width: 768px){
+  .button-home {
+    width: 16rem;
+    height: 3.5rem;
+    padding-top: .3rem;
+    font-size: 2rem;
+  }
+}

@@ -18,3 +18,20 @@
 .overview {
   text-align: center;
 }
+@media(min-width: 768px){
+  .presentation-container {
+    margin: 2rem 1.5rem 4rem 1rem;
+  }
+  .presentation-main {
+    gap: 3rem;
+    margin-bottom: 3rem;
+  }
+  .presentation-container .presentation-image {
+    width: 20rem;
+  }
+  .presentation-container .presentation-text {
+    width: 30rem;
+    font-size: 4.2rem;
+    text-align: right;
+  }
+}

@@ -10,7 +10,6 @@
   color: var(--white);
 }
 .footer-text {
-  font-size: 2rem;
   font-weight: var(--bold);
 }
 .footer-left {
@@ -22,4 +21,22 @@
 .footer-contact {
   display: flex;
   gap: 1rem;
+  padding-top: .4rem;
+}
+@media(min-width: 768px){
+  .footer {
+    height: 8rem;
+    font-size: 2.4rem;
+  }
+  .footer-contact {
+    padding-top: .6rem;
+  }
+  .footer-contact svg {
+    width: 2.3rem;
+    height: 2.3rem;
+    transition: .4s;
+  }
+  .footer-contact svg:hover {
+    transform: scale(1.1);
+  }
 }

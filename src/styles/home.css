@@ -14,7 +14,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 2rem;
+  margin-bottom: 6rem;
 }
 .more-info-text {
   line-height: 2;
@@ -28,4 +28,42 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media(min-width: 768px){
+  .technologies svg {
+    width: 7rem;
+    height: 7rem;
+  }
+  .technologies {
+    width: 35rem;
+  }
+  .presentation-overview-text {
+    font-size: 2.2rem;
+    width: 40rem;
+    margin: 0 auto;
+  }
+  .aboutme-text-description {
+    line-height: 1.5;
+    margin-bottom: 2rem;
+  }
+  .my-work-container .my-work-description {
+    line-height: 1.5;
+    margin-bottom: 3rem;
+  }
+  .more-info .more-info-text{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  .more-info .more-info-icons {
+    width: 12rem;
+    height: 6rem;
+  }
+  .more-info .more-info-icons svg {
+    width: 4.5rem;
+    height: 4.5rem;
+    transition: .4s;
+  }
+  .more-info .more-info-icons svg:hover {
+    transform: scale(1.1);
+  }
 }

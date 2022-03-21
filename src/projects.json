@@ -2,17 +2,18 @@
   "projects": [
     {
       "id": "todo-app",
-      "image": "",
-      "overview": "In this little app you could administrate your TODOs, create TODOs, edit them and delete them. This App was created using React JS, vanilla CSS and implementing webpack manually",
+      "image": "https://via.placeholder.com/300x210",
+      "overview": "In this little app you could administrate your TODOs, create TODOs, edit them and delete them. This App was created using React JS, vanilla CSS and implementing webpack manually.",
       "features": [
         "Created using React",
         "React projects configured using webpack and babel manually",
         "Using npm to install dependencies"
-      ]
+      ],
+      "url": "https://app-todos-f.netlify.app/"
     },
     {
       "id": "disney-plus-clone",
-      "image": "",
+      "image": "https://via.placeholder.com/300x210",
       "overview":"It's a single page application that was created using React, React-Redux, Redux Thunk to make asynchronous requests to The Movie Database API.",
       "features": [
         "React project template using ViteJS",
@@ -21,11 +22,12 @@
         "A little bit of react-bootstrap",
         "Eslint is used as a linter",
         "Using npm to install dependencies"
-      ]
+      ],
+      "url": "https://disney-plus-clone-frankz.netlify.app"
     },
     {
       "id": "twitter-graphs",
-      "image": "",
+      "image": "https://via.placeholder.com/300x210",
       "overview" : "Its a web page was created using HTML, CSS and vanilla JS for the frontend and node js for the little backend. This web app fetch data from twitter API to create a graph. Also, you can select nodes to calculate the shortest route using dijkstra algorithm.",
       "features": [
         "Webpack was used to minified the frontend",
@@ -35,16 +37,19 @@
         "A little documentation was created using JSdocs",
         "Deploy was perform in Heroku",
         "Using npm to install dependencies"
-      ]
+      ],
+      "url": "https://proyecto-final-eda-grafos.herokuapp.com/"
     },
     {
       "id": "rick-and-morty",
-      "image": "",
-      "overview": "This landing page shows data of Rick and Morty API, it was created using HTML, CSS and JS",
+      "image": "https://via.placeholder.com/300x210",
+      "overview": "This landing page shows data of Rick and Morty API, it was created using HTML, CSS and JS.",
       "features": [
+        "Use of async / await",
         "Asynchronous calls to Rick and Morty API",
         "DOM manipulation"
-      ]
+      ],
+      "url" : "https://frankzalarcon.github.io/Rick-and-Morty-API/"
     }
   ]
 }

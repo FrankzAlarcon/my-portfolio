@@ -4,11 +4,9 @@ import { MdEmail } from 'react-icons/md';
 import { RiInstagramFill } from 'react-icons/ri';
 import Header from './Header';
 import Button from '../components/Button';
-import useOnScroll from '../hooks/useOnScroll';
 import '../styles/modal.css';
 
 function Modal() {
-  // const { showFixed } = useOnScroll();
   return (
     <div className="modal-container">
       <Header />

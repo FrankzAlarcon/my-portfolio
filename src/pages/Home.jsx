@@ -1,4 +1,4 @@
-import React, { useContext, useState, useEffect } from 'react';
+import React, { useContext } from 'react';
 import { SiGithub } from 'react-icons/si';
 import Header from '../containers/Header';
 import Footer from '../containers/Footer';
@@ -24,19 +24,22 @@ function Home() {
       <Header showFixed={showFixed} />
       <section className="presentation">
         <Presentation image={Me} text="Hi, my name is " boldText="Frankz">
-          <p>I am a student and web developer from Orellana, Ecuador 🇪🇨</p>
+          <p className="presentation-overview-text">I am a student and web developer from Orellana, Ecuador 🇪🇨</p>
         </Presentation>
         <Button text="Go to projects" href="#my-projects" />
         <AboutMe>
-          <p>
-            Currently studying software engineering at EPN Ecuador and web development at Platzi 💚.
-            I am a fan of React ⚛ and enjoy developing web apps and SPAs with it.
-            In my free time, I like to watch soccer and keep up with JS technology.
-          </p>
-          <Technologies />
+          <div>
+            <p className="aboutme-text-description">
+              Currently studying software engineering at EPN Ecuador
+              and web development at Platzi 💚.
+              I am a fan of React ⚛ and enjoy developing web apps and SPAs with it.
+              In my free time, I like to watch soccer and keep up with JS technology.
+            </p>
+            <Technologies />
+          </div>
         </AboutMe>
         <MyWork>
-          <p>These are some of my personal projects.</p>
+          <p className="my-work-description">These are some of my personal projects, each one uses different web technologies</p>
           <ProjectsContainer />
         </MyWork>
         <div className="more-info">

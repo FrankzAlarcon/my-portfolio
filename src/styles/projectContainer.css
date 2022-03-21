@@ -2,10 +2,29 @@
   display: flex;
   gap: 2rem;
   overflow-x: scroll;
-  height: 22rem;
+  height: 23rem;
 }
 .project-card-container .technologies-container {
   display: flex;
   justify-content: center;
   gap: 1rem;
+}
+@media(min-width: 768px){
+  .project-card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    overflow-x: unset;
+    height: auto;
+    gap: 3rem;
+  }
+  .project-card-container .technologies-container svg {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+@media(min-width: 1024px){
+  .project-card-container .technologies-container svg {
+    width: 3rem;
+    height: 3rem;
+  }
 }

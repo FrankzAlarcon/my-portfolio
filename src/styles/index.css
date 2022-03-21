@@ -40,3 +40,8 @@ a {
 .underline-dinamyc:hover, .underline-dinamyc:focus {
   background-size: 100% 2px;
 }
+@media(min-width: 768px){
+    body {
+      font-size: 1.8rem;
+    }
+}
